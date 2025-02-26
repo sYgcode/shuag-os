@@ -69,5 +69,5 @@ My main challenges during this first milestone were picking my project, figuring
 ---
 
 ## Credit:
-- Nanobyte [tutorial](https://www.youtube.com/watch?v=9t-SPC7Tczc) I used to build my initial bootlader
+- Nanobyte [tutorial](https://www.youtube.com/watch?v=9t-SPC7Tczc) I used to build my initial bootloader
 - Good ol' ChatGPT to help me understand some of the behind the scenes and the makefile
