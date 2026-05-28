@@ -21,6 +21,7 @@ upgrade our bootloader to read from the disk and work in 32 bit.
 ---
 
 ## Development:
+
 I started by opening up the project after a long time. I went over all the assembly in the bootloader to make
 sure I understood what was going on, installed wsl, nasm and qemu on my new computer and got the bootloader
 to print "Hello World!" in 16 bit using the interrupts I used in my first iteration.
