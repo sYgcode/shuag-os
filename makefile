@@ -4,13 +4,13 @@ ASM = nasm
 SRC_DIR = src
 BUILD_DIR = build
 # Output files
-BOOTLOADER = $(BUILD_DIR)/boot.bin
+BOOTLOADER = $(BUILD_DIR)/boot_32.bin
 
 
 # Build the bootloader
 all: $(BOOTLOADER)
 
-$(BOOTLOADER): $(SRC_DIR)/boot.asm
+$(BOOTLOADER): $(SRC_DIR)/32bit_main.asm
 	$(ASM) -f bin $< -o $@
 
 # Run in QEMU

@@ -22,7 +22,7 @@ Understand the basics of the project, get the initial bootloader running and dec
 ## Development:
 I started by trying to figure out where to continue after the lines "I want to build an operating
 system". I found a good beginner tutorial by nanobyte to write the first bootloader. from my current 
-understaing as I am writing this now a bootloader is the first 512 bytes the computer reads off the 
+understanding as I am writing this now, a bootloader is the first 512 bytes the computer reads off the 
 disk or drive the os is hosted on. it's job is to reference the actual files of the os to the computer 
 so that the computer can load the os into memory and we can use it.
 
