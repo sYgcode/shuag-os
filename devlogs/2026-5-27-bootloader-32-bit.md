@@ -21,16 +21,19 @@ upgrade our bootloader to read from the disk and work in 32 bit.
 ---
 
 ## Development:
-
 I started by opening up the project after a long time. I went over all the assembly in the bootloader to make
 sure I understood what was going on, installed wsl, nasm and qemu on my new computer and got the bootloader
 to print "Hello World!" in 16 bit using the interrupts I used in my first iteration.
+
 ![example_1](images/image.png)
+
 Following my recap I worked on upgrading my understanding of assembly by writing the "Hello World!" bootloader
 using different methods, ie seperation of files and better written "functions" (I'm not sure what the assembly
 term is for this). Following this I moved on to understanding how to read from the second sector (basically 
 how to read from the disk) in 16 bit using interrupts.
+
 ![example_2](images/image_1.png)
+
 Once I got reading from the disk to work in 16 bit, I continued on to moving our bootloader from 16 bit to 32
 bit. This change means we dont have the option to use BIOS interrupts. The first step in this change was
 creating a new print function. Since we couldn't use interrupts, the function needs to go the VGA video's
@@ -40,6 +43,7 @@ After our print functionality the next stage was implementing our GDT table, and
 our 32 bootloader. Our bootloader starts in 16 bit, lets us know and then moves to 32 bit. Currently the 32
 bit print function overwrites each time from the top left corner so that may be something to improve on in
 the future.
+
 ---
 
 ## Challenges:
@@ -51,10 +55,12 @@ something I should improve on in the future.
 
 ## Notes:
  - Try to expand to more than one tutorial.
+ 
 ---
 
 ## Result:
 It works!
+
 ![example_3](images/image_2.png)
 
 ---
